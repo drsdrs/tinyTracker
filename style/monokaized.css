@@ -1,0 +1,93 @@
+
+:root {
+    /* Monokai Color Palette */
+    --white: #f1f1f1;
+    --lgrey: #ababbe;
+    --grey: #9999aa;
+    --warmgrey: #75715e;
+    --d2grey: #474a3e;
+    --d1grey: #2a2a2a;
+    --dgrey: #252525;
+    --ddgrey: #1f1f1f;
+    --dddgrey: #1a1a1a;
+    --ddddgrey: #151515;
+    --dark: #111;
+
+    --dpink: #4f0000;
+    --dblue: #bc0000;
+
+    --pink: #960050;
+    --lpink: #ff0090;
+    --green: #66aa11;
+    --lgreen: #80ff00;
+    --orange: #c47f2c;
+    --lorange: #ffba68;
+    --blue: #30309b;
+    --lblue: #5f5fee;
+    --cyan: #4eb4fa;
+    --lcyan: #89b6e2;
+    --purple: #7e40a5;
+    --lpurple: #bb88dd;
+
+    /* Pale colorset */
+    --pred: #ff7d7d;    /* Red */
+    --pmagenta: #ff3b8f; /* Magenta */
+    --plmagenta:rgb(255, 115, 176); /* Magenta */
+    --ppink: #ff6583;
+    --plpink: #ffb68f;  /* Peach */
+    --pgreen: #7fb043;  /* Green */
+    --plime: #b5ff6a; /* Light Green */
+    --plgreen: #a3d97c;
+    --porange: #ff9767;
+
+    --plorange: #ffba68; /* Light Orange */
+
+    --pyellow: #ffd56c;
+    --pblue: #30309b;   /* Blue */
+    --plblue: #5f5fee; /* Indigo */
+    --pcyan: #3bbf9b;   /* Cyan */
+    --plcyan: #89dfe2;  /* Light Blue */
+    --pviolet: #9b3bff; /* Violet */
+    --plviolet: #a551ff; /* Violet */
+    --plpurple: #bb88dd; /* Light Purple */
+    --ppurple: #aa9eef;
+}
+
+
+.pattern { color: var(--dark);  }
+.pattern .cell{ background: var(--dgrey); color: var(--white); }
+
+.patternId0 { background: var(--porange); }
+.patternId1 { background: var(--pcyan); }
+.patternId2 { background: var(--plgreen); }
+.patternId3 { background: var(--plviolet); }
+.patternId4 { background: var(--plmagenta); }
+.patternId5 { background: var(--plblue); }
+.patternId6 { background: var(--plpurple); }
+.patternId7 { background: var(--plpink); }
+.patternId8 { background: var(--plime); }
+.patternId9 { background: var(--pgreen); }
+.patternId10 { background: var(--pyellow); }
+.patternId11 { background: var(--ppurple); }
+.patternId12 { background: var(--plcyan); }
+.patternId13 { background: var(--ppink); }
+.patternId14 { background: var(--pmagenta); }
+.patternId15 { background: var(--pred); }
+.patternId16 { background: var(--pviolet); }
+.patternId17 { background: var(--orange); }
+.patternId18 { background: var(--cyan); }
+.patternId19 { background: var(--lgreen); }
+.patternId20 { background: var(--plviolet); }
+.patternId21 { background: var(--plmagenta); }
+.patternId22 { background: var(--lblue); }
+.patternId23 { background: var(--lpurple); }
+.patternId24 { background: var(--lpink); }
+.patternId25 { background: var(--plime); }
+.patternId26 { background: var(--green); }
+.patternId27 { background: var(--pyellow); }
+.patternId28 { background: var(--purple); }
+.patternId29 { background: var(--lcyan); }
+.patternId30 { background: var(--pink); }
+.patternId31 { background: var(--pmagenta); }
+.patternId32 { background: var(--red); }
+.patternId33 { background: var(--violet); }

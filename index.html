@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyTracker</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/monokaized.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="headerMenu">
+        <span class="clickable" title="FileOperations">File<img class="pauseBtn" title="fileOperations" src="assets/svg/fileOperations.svg" alt="Pause"></img></span>
+        <span>||| TinyTracker |||</span>
+        <span><img class="" title="bpm" src="assets/svg/bpm.svg" alt="bpm"></img><span>240</span> </span>|
+
+
+
+        <span class="playSongBtnContainer clickable">Song
+            <img class="displayNone playBtn" title="Play" src="assets/svg/play.svg" alt="Play"></img>
+            <img class="pauseBtn" title="Pause" src="assets/svg/pause.svg" alt="Pause"></img>
+        </span>|
+
+        <span class="playPtnBtnContainer clickable">All
+            <img class="displayNone playBtn" title="Play" src="assets/svg/play.svg" alt="Play"></img>
+            <img class="pauseBtn" title="Pause" src="assets/svg/pause.svg" alt="Pause"></img>
+        </span>|
+
+        <span class="viewSwitcher">viewSwitcher>>
+            <a href="#top">Pattern</a>
+            <a href="#song-container">sng</a>
+            <a href="#config-container">config</a>
+        </span>
+
+        <table class="patternConfig">
+            <tr>
+                <th title="Instrument ID"><img src="assets/svg/instrument.svg" alt=""></th>
+                <th title="Resolution"><img src="assets/svg/resolution.svg" alt=""></th>
+                <th title="Start position"><img src="assets/svg/startPosition.svg" alt=""></th>
+                <th title="Pause Length"><img src="assets/svg/pauseLength.svg" alt=""></th>
+                <th title="Loop amount"><img src="assets/svg/loop.svg" alt=""></th>
+                <th>Copy</th>
+                <th>Mute</th>
+                <th>Steps</th>
+                <th>channels</th>
+                <th>
+
+                    <div class="cell pos clickable selected">
+                        <span class="beatContainer">
+                            <span class="fullBeatNum">2</span>
+                            <span class="beat4Num">0</span>
+                        </span>
+                        <span class="numerator">18</span>/<span class="denominator">24</span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th contenteditable="true">33</th>
+                <th>½</th>
+                <th>2¼</th>
+                <th>0½</th>
+                <th>4</th>
+                <th>Delete</th>
+                <th>Beats</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="pattern-container"></div>
+    <div id="song-container"></div>
+    
+    <div id="config-container">
+        <div>main prg config, ?</div>
+        <div>Instrument config, name, sample|midi ...</div>
+        <div>Try use midi-controller for many control-inputs</div>
+    </div>
+
+    <!-- <div class="footerInfo" >FOOTER-INFO, put confirm and other inputs here<button>YES</button><button>NO</button></div> -->
+
+    <script type="text/javascript">c=console;c.l=c.log;</script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

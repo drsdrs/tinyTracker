@@ -1,0 +1,247 @@
+
+* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+}
+
+@font-face {
+	font-family: monaspaceNeon;
+	src: url('../assets/fonts/monaspace/MonaspaceNeon.ttf');
+}
+
+@font-face {
+	font-family: monaspaceKrypton;
+	src: url('../assets/fonts/monaspace/MonaspaceKrypton.ttf');
+}
+
+@font-face {
+	font-family: monaspaceArgon;
+	src: url('../assets/fonts/monaspace/MonaspaceArgon.ttf');
+}
+
+@font-face {
+	font-family: monaspaceXenon;
+	src: url('../assets/fonts/monaspace/MonaspaceXenon.ttf');
+}
+
+.clickable { pointer-events: all; }
+
+body {
+		background-color: var(--dgrey);
+		color: #111;
+		font-family: departureMono, monospace;
+
+		font-size: 13px;
+		cursor: default;
+		/* pointer-events: none; */
+		user-select: none;
+		overflow-x: hidden;
+		overflow-y: hidden;
+}
+
+.displayNone{ display: none; }
+
+.headerMenu{
+		position: fixed;
+		top: 0;
+		background: #bcbcbc;
+		color: #000;
+		width: 100%;
+}
+
+.footerInfo{
+		position: fixed;
+		bottom: 0;
+		background: #2a7c9a;
+		color: #000;
+		width: 100%;
+}
+
+
+.patternConfig{
+		margin-left: auto;
+}
+
+#pattern-container {
+  width: 100%;
+	margin-top: 65px;
+	padding: 8px;
+	font-weight: 500;
+	letter-spacing: -2px;
+	white-space: nowrap;
+	white-space-collapse: preserve;
+	height: calc(100vh - 100px);
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+
+#song-container {
+	height: 100vh;
+	padding-top: 100px;
+  width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+#config-container {
+	height: calc(100vh - 100px);
+	padding-top: 100px;
+  width: 100vw;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	background-color: aqua;
+}
+
+.songRow {
+	background-color: #4a4a4a;
+	margin: 2px 0;
+	white-space: nowrap;
+}
+
+.songStep{
+	display: inline-block;
+	height: 12px;
+}
+
+.pattern {
+	display: inline-block;
+	padding: 4px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	vertical-align: top;
+}
+
+.channels{
+	display: inline-block;
+	overflow-y: scroll;
+	height: calc(100vh - 100px);
+	background: var(--dark);
+	padding-right: 12px;
+}
+
+.pattern.selected{
+	/* background: var(--white); */
+	padding: 0px;
+	border: 4px dotted var(--dgrey);
+}
+/* .pattern > * { pointer-events: none; } */
+
+
+.row, .row-header {
+	/* display: grid;
+	grid-auto-rows: 1fr;
+	grid-auto-columns: min-content;
+	grid-auto-flow: column;
+	gap: 0px; */
+	/* height: 18px; */
+	white-space: nowrap;
+}
+
+.row-header {
+	text-align: center;
+}
+
+.row-header .cell {
+	background-color: var( --lgrey);
+	text-align: center;
+}
+
+.cell {
+	padding: 1px 2px;
+	display: inline-block;
+	font-family: monaspaceArgon;
+	font-size: 14px;
+}
+.cell *{ pointer-events: none; }
+
+.cell.selected {
+	/* border-left: 1px solid white;
+	border-right: 1px solid white; */
+}
+
+.cell.pos, .header-cell.position{
+	width: 66px;
+	font-family: monaspaceKrypton;
+}
+
+.cell.volume{
+	width: 22px;
+}
+.cell.effect{
+	width: 28px;
+}
+
+.cell.pos {
+	text-align: right;
+}
+
+.cell.pos .beatContainer{
+	display: block;
+	float:left;
+}
+.cell.pos .fullBeatContainer{
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+}
+.cell.pos .fullBeatNum{
+	margin-left: 3px
+}
+.cell.pos .beat4Num{
+	font-size: 11px;
+	margin-left: 3px
+}
+
+.cell.pos .numerator{
+	font-size: 12px;
+  top: -5px;
+  margin-right: -8px;
+  display: inline-block;
+  position: relative;
+}
+
+.cell.pos .denominator{
+	font-size: 12px;
+}
+
+.beat4 .cell{ 
+	/* margin: 1px 0; */
+}
+.beat1 .cell{ 
+	/* margin: 1px 0; */
+}
+
+/* overwrite margin of beat class for note cell */
+.cell.note{
+	margin-left: 1px;
+	width: 28px;
+}
+
+.noteHash {
+	font-size: 12px;
+  position: relative;
+  top: -4px;
+  left: -13px;
+}
+
+
+.cell.pos .numerator, .cell.pos .denominator { color: var(--pyellow ); }
+.cell.pos { color: var(--white); background: var(--dark)}
+
+.cell.note *{ color: var(--plcyan); }
+.cell.volume * { color: var(--porange); }
+.cell.effect * { color: var(--plime); }
+
+
+.beat4 .cell{ background: var(--ddddgrey); }
+.beat1 .cell{ background: var(--ddgrey); }
+
+
+.row.active .cell{ background: var(--d2grey); }
+
+.row.selected .cell{ background: var(--dpink); }
+/* .row.selected .cell *{ color: var(--pred); } */
+
+.row.selected .cell.selected { background: var(--dblue); }
+/* .row.selected .cell.selected *{ color: var(--pyellow); } */
